@@ -1,19 +1,19 @@
 # Solidity  Project
 
-The project involves
-* Mint the Tokens
-* Burn the Tokens
+The project involves two tokens
+* Mint Token
+* Burn Token
 
 ## Description
 
-This project is a Ethereum baesd smart contract coded in soldity for any Token of your choice (In this case we have taken "SLOY"SLY) . It includes basic functionalities for minting and burning tokens, allowing the total supply and individual balances to be managed.
+This project is a Ethereum baesd smart contract coded in soldity for any Token of your choice (In this case we have taken "META"MTA) . It includes basic functionalities for minting and burning tokens, allowing the total supply and individual balances to be managed.
 
 ## Getting Started
 
 ### Installing
 
 * Open [Remix IDE](https://remix.ethereum.org/)
-* Create a new file named `solidity_project1.sol` and paste the code given in this repository (solidity_project1).
+* Create a new file named `HelloWorld1.sol' or we can also take it asn solidity_project1.sol and paste the code given in this repository .
 * Copy and paste the code from the file to the online editor(remix) or any compiler of your choice.
 
 ### Executing program (Remix editor)
@@ -34,7 +34,7 @@ For any issues, you can refer to the Remix documentation or common Ethereum deve
 
 ## Authors
 
-Contributors names and contact info
+Contributor name and contact info
 
 Aryan Saini 
 [@22BCS11952] (aryansaini16092004@gmail.com)
