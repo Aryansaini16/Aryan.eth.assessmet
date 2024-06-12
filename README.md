@@ -1,41 +1,45 @@
+# Solidity  Project
 
-// SPDX-License-Identifier: MIT
-pragma solidity >=0.8.18;
+The project involves
+* Mint the Tokens
+* Burn the Tokens
 
-/*
-       REQUIREMENTS
-    1. Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply)
-    2. Your contract will have a mapping of addresses to balances (address => uint)
-    3. You will have a mint function that takes two parameters: an address and a value. 
-       The function then increases the total supply by that number and increases the balance 
-       of the “sender” address by that amount
-    4. Your contract will have a burn function, which works the opposite of the mint function, as it will destroy tokens. 
-       It will take an address and value just like the mint functions. It will then deduct the value from the total supply 
-       and from the balance of the “sender”.
-    5. Lastly, your burn function should have conditionals to make sure the balance of "sender" is greater than or equal 
-       to the amount that is supposed to be burned.
-*/
+## Description
 
-contract MyToken {
+This project is a Ethereum baesd smart contract coded in soldity for any Token of your choice (In this case we have taken "SLOY"SLY) . It includes basic functionalities for minting and burning tokens, allowing the total supply and individual balances to be managed.
 
-    // public variables here
-    string public tokenName = "META";
-    string public tokenAbbrv ="MTA";
-    uint public totalSupply =0;
-    // mapping variable here
-    mapping(address => uint) public balances;
-    // mint function
-    function mint (address _address, uint _value) public {
-      totalSupply += _value;
-      balances [_address] += _value;
-    }
-    // burn function
-    function turn (address _address, uint _value) public {
-      if (balances[_address] >= _value){
+## Getting Started
 
-      totalSupply -= _value;
-      balances [_address] -= _value;
-      }
-    }
-      
-}     
+### Installing
+
+* Open [Remix IDE](https://remix.ethereum.org/)
+* Create a new file named `solidity_project1.sol` and paste the code given in this repository (solidity_project1).
+* Copy and paste the code from the file to the online editor(remix) or any compiler of your choice.
+
+### Executing program (Remix editor)
+
+* Copy and Paste the program
+* Go to solidity compiler in the left side panel and compile the program
+* Go to Deploy & run transactions in the left side panel and Deploy the program
+* Now in "Deployed Section" :
+   * Use the function 'mint' to create new tokens:
+     * Enter an address and value.
+     * Click on the 'transact' button.
+   * Use the function 'burn' to burn/destroy tokens:
+     * Enter an address and avalue.
+     * Click on the 'transact' button.
+
+## Help
+For any issues, you can refer to the Remix documentation or common Ethereum development resources.
+
+## Authors
+
+Contributors names and contact info
+
+Aryan Saini 
+[@22BCS11952] (aryansaini16092004@gmail.com)
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
